@@ -19,13 +19,13 @@
         const { createApp } = Vue // la funzione createApp la salviamo in una const
 
         createApp({ // funzione createApp
-            data() {
+            data()  { // l'opzione data ci permette di connetterci al dom e scambiare dati, solo con options API
                 return {
-                    message: "Hello Vjs",
-                    content: "lorem lorem lorem lorem lorem lorem",
+                    message: "Hello Vjs", // richiama nel html tramite la parola chiave {{message}}
+                    content: "lorem lorem lorem lorem lorem lorem", // richiama in html tramite la parola chiave {{content}}
                 }
             }
-        }).mount("#app")
+        }).mount("#app") // il metodo mount permette di connettere l'istanza all'elemento a cui abbiamo dato id app
     </script>
 
     <script src="./main.js"></script>
