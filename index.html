@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>   <!-- link della cdn di vjs che ci occorre per far funzionare il tutto -->
+</head>
+<body>
+    <div id="app">     
+        <h1>{{message}}</h1>
+        <p>{{content}}</p>
+    </div>
+    <!-- elemento html nel quale utilizzare il framework vuejs -->
+    
+   <!-- apriamo lo script per la scrittura della logica --> 
+    <script> 
+    
+        const { createApp } = Vue // la funzione createApp la salviamo in una const
+
+        createApp({ // funzione createApp
+            data() {
+                return {
+                    message: "Hello Vjs",
+                    content: "lorem lorem lorem lorem lorem lorem",
+                }
+            }
+        }).mount("#app")
+    </script>
+
+    <script src="./main.js"></script>
+</body>
+</html>
